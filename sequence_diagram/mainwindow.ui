@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindowClass</class>
+ <widget class="QMainWindow" name="mainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>774</width>
+    <height>575</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Редактор диаграмм последовательности</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="addObject">
+          <property name="toolTip">
+           <string>Добавить объект</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="mainwindow.qrc">
+            <normaloff>:/mainWindow/icons/object.png</normaloff>:/mainWindow/icons/object.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>25</width>
+            <height>20</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="addComment">
+          <property name="toolTip">
+           <string>Добавить комментарий</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="mainwindow.qrc">
+            <normaloff>:/mainWindow/icons/comment.png</normaloff>:/mainWindow/icons/comment.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>25</width>
+            <height>20</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="addMessage">
+          <property name="toolTip">
+           <string>Добавить синхронное сообщение</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="mainwindow.qrc">
+            <normaloff>:/mainWindow/icons/arrow.png</normaloff>:/mainWindow/icons/arrow.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>25</width>
+            <height>20</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="addCreationMessage">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="toolTip">
+           <string>Добавить сообщение создания</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="mainwindow.qrc">
+            <normaloff>:/mainWindow/icons/arrowcr.png</normaloff>:/mainWindow/icons/arrowcr.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>25</width>
+            <height>20</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="addLoop">
+          <property name="toolTip">
+           <string>Добавить цикл</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="mainwindow.qrc">
+            <normaloff>:/mainWindow/icons/cycle.png</normaloff>:/mainWindow/icons/cycle.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>25</width>
+            <height>20</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="addStop">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="toolTip">
+           <string>Добавить/Удалить остановку линии жизни</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="mainwindow.qrc">
+            <normaloff>:/mainWindow/icons/cancel1.png</normaloff>:/mainWindow/icons/cancel1.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>25</width>
+            <height>20</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="zoom_in">
+          <property name="toolTip">
+           <string>Увеличить</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="mainwindow.qrc">
+            <normaloff>:/mainWindow/icons/zoomin.png</normaloff>:/mainWindow/icons/zoomin.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>25</width>
+            <height>20</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="zoom_out">
+          <property name="toolTip">
+           <string>Уменьшить</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="mainwindow.qrc">
+            <normaloff>:/mainWindow/icons/zoomout.png</normaloff>:/mainWindow/icons/zoomout.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>25</width>
+            <height>20</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="scaleCombo">
+          <property name="currentIndex">
+           <number>2</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>50%</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>75%</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>100%</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>150%</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>200%</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="removeObject">
+          <property name="toolTip">
+           <string>Удалить</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="mainwindow.qrc">
+            <normaloff>:/mainWindow/icons/trash.png</normaloff>:/mainWindow/icons/trash.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>25</width>
+            <height>20</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>278</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGraphicsView" name="canvas"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>774</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <widget class="QMenu" name="menu_3">
+     <property name="title">
+      <string>Последние диаграммы</string>
+     </property>
+     <addaction name="lastdiagram1"/>
+     <addaction name="lastdiagram2"/>
+     <addaction name="lastdiagram3"/>
+     <addaction name="lastdiagram4"/>
+     <addaction name="lastdiagram5"/>
+    </widget>
+    <addaction name="createFile"/>
+    <addaction name="openFile"/>
+    <addaction name="saveFile"/>
+    <addaction name="saveFileAs"/>
+    <addaction name="saveImage"/>
+    <addaction name="printAction"/>
+    <addaction name="menu_3"/>
+    <addaction name="exitAction"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Правка</string>
+    </property>
+    <addaction name="cutAction"/>
+    <addaction name="copyAction"/>
+    <addaction name="pasteAction"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="createFile">
+   <property name="text">
+    <string>Создать</string>
+   </property>
+  </action>
+  <action name="openFile">
+   <property name="text">
+    <string>Открыть...</string>
+   </property>
+   <property name="iconText">
+    <string>Открыть...</string>
+   </property>
+   <property name="toolTip">
+    <string>Открыть...</string>
+   </property>
+  </action>
+  <action name="saveFile">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </action>
+  <action name="saveFileAs">
+   <property name="text">
+    <string>Сохранить как...</string>
+   </property>
+  </action>
+  <action name="saveImage">
+   <property name="text">
+    <string>Сохранить в изображение...</string>
+   </property>
+   <property name="iconText">
+    <string>Сохранить в изображение...</string>
+   </property>
+   <property name="toolTip">
+    <string>Сохранить в изображение...</string>
+   </property>
+  </action>
+  <action name="printAction">
+   <property name="text">
+    <string>Печать...</string>
+   </property>
+   <property name="iconText">
+    <string>Печать...</string>
+   </property>
+   <property name="toolTip">
+    <string>Печать...</string>
+   </property>
+  </action>
+  <action name="exitAction">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="cutAction">
+   <property name="text">
+    <string>Вырезать</string>
+   </property>
+  </action>
+  <action name="copyAction">
+   <property name="text">
+    <string>Копировать</string>
+   </property>
+  </action>
+  <action name="pasteAction">
+   <property name="text">
+    <string>Вставить</string>
+   </property>
+  </action>
+  <action name="lastdiagram1">
+   <property name="text">
+    <string>&lt;Пусто&gt;</string>
+   </property>
+  </action>
+  <action name="lastdiagram2">
+   <property name="text">
+    <string>&lt;Пусто&gt;</string>
+   </property>
+  </action>
+  <action name="lastdiagram3">
+   <property name="text">
+    <string>&lt;Пусто&gt;</string>
+   </property>
+  </action>
+  <action name="lastdiagram4">
+   <property name="text">
+    <string>&lt;Пусто&gt;</string>
+   </property>
+  </action>
+  <action name="lastdiagram5">
+   <property name="text">
+    <string>&lt;Пусто&gt;</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mainwindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

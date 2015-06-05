@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="mainWindow">
+    <file>icons/arrow.png</file>
+    <file>icons/arrowcr.png</file>
+    <file>icons/cancel1.png</file>
+    <file>icons/comment.png</file>
+    <file>icons/cycle.png</file>
+    <file>icons/object.png</file>
+    <file>icons/trash.png</file>
+    <file>icons/zoomin.png</file>
+    <file>icons/zoomout.png</file>
+  </qresource>
+</RCC>

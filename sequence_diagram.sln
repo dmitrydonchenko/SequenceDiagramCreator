@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sequence_diagram", "sequence_diagram\sequence_diagram.vcproj", "{0E946DC5-A367-4245-A39B-B36106700D4C}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{B4F5743A-6952-4E2A-A33F-A68A892E365E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E946DC5-A367-4245-A39B-B36106700D4C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0E946DC5-A367-4245-A39B-B36106700D4C}.Debug|Win32.Build.0 = Debug|Win32
+		{0E946DC5-A367-4245-A39B-B36106700D4C}.Release|Win32.ActiveCfg = Release|Win32
+		{0E946DC5-A367-4245-A39B-B36106700D4C}.Release|Win32.Build.0 = Release|Win32
+		{B4F5743A-6952-4E2A-A33F-A68A892E365E}.Debug|Win32.ActiveCfg = Debug
+		{B4F5743A-6952-4E2A-A33F-A68A892E365E}.Release|Win32.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
